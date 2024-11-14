@@ -20,5 +20,4 @@ public class testsPiedraPapelTijera {
         Assert.assertEquals("Victoria Jugador 2", resultado);
     }
 
-
 }
