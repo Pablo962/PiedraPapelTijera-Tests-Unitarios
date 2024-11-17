@@ -28,32 +28,23 @@ public class PiedraPapelTijera {
     
             switch (jugador1) {
                 case PIEDRA: {
-                    if (jugador2 == Jugada.PAPEL)
-                        return ganador2;
-                    if (jugador2 == Jugada.TIJERA)
-                        return ganador1;
-                    else
-                        return empate;
+                    if (jugador2 == Jugada.PAPEL) return ganador2;
+                    if (jugador2 == Jugada.TIJERA) return ganador1;
+                    else return empate;
                 }
                 case PAPEL: {
-                    if (jugador2 == Jugada.TIJERA)
-                        return ganador2;
-                    if (jugador2 == Jugada.PIEDRA)
-                        return ganador1;
-                    else
-                        return empate;
+                    if (jugador2 == Jugada.TIJERA) return ganador2;
+                    if (jugador2 == Jugada.PIEDRA) return ganador1;
+                    else return empate;
                 }
                 case TIJERA: {
-                    if (jugador2 == Jugada.PIEDRA)
-                        return ganador2;
-                    if (jugador2 == Jugada.PAPEL)
-                        return ganador1;
-                    else
-                        return empate;
+                    if (jugador2 == Jugada.PIEDRA) return ganador2;
+                    if (jugador2 == Jugada.PAPEL) return ganador1;
+                    else return empate;
                 }
                 default: {
                     return error;
                 }
             }
-        }    
+        }
 }
