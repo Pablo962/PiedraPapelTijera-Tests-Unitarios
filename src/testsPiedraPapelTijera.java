@@ -58,6 +58,13 @@ public class testsPiedraPapelTijera {
         Assert.assertEquals("Empate", resultado);
     }
 
+    @Test 
+    public void testDefaultCase(){
+        Assert.assertThrows(IllegalArgumentException.class, () ->{
+            PiedraPapelTijera.jugar(PiedraPapelTijera.Jugada.valueOf("valorNoValido"), PiedraPapelTijera.Jugada.PIEDRA);
+        });
+    }
+
     // Estrategia usando particiones
 
     /*
